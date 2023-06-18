@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(./fonts/Poppins-Bold.ttf) format('truetype'),
+        url(./fonts/Poppins-Medium.ttf) format('truetype'),
+        url(./fonts/Poppins-Regular.ttf) format('truetype'),
+        url(./fonts/Poppins-SemiBold.ttf) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+body {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+header .search {
+    display: flex;
+}
+
+header .img-logo {
+    background-image: url(./assets/Freshnesecom.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 177px;
+    height: 18px;
+}
+
+header .search div {
+    background: #F9F9F9;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px 0 0 12px;
+    padding: 10px 48px 10px 16px;
+    font: 700 15px 'Poppins';
+    color: #151515;
+}
+
+header .search input {
+    background: #F9F9F9;
+    border: 1px solid #D1D1D1;
+    border-radius: 0 12px 12px 0;
+    width: 320px;
+    outline: none;
+    font: 400 14px 'Poppins';
+    color: #A9A9A9;
+}
+
+header .search input::placeholder {
+    font: 400 14px 'Poppins';
+    color: #A9A9A9;
+    padding: 11px 0 10px 24px;
+}
+
+header .nav-imgs {
+    display: flex;
+
+}
+
+header .nav-imgs div:not(:last-child) {
+    margin-right: 45px;
+}
+
+header .man {
+    background-image: url(./assets/Man.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+
+header .bag {
+    background-image: url(./assets/Layer.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+
+main {
+    margin-top: 242px;
+    margin-bottom: 128px;
+}
+
+.blocks {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 130px;
+}
+
+.block {
+    background-image: url(./assets/Group\ 18.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 420px;
+    height: 280px;
+}
+
+.block:not(:last-child) {
+    padding-right: 40px;
+}
+
+.block p {
+    font: 600 12px 'Poppins';
+    color: #6A983C;
+    padding: 50px 0 0 30px;
+}
+
+.block h1 {
+    font: 600 22px 'Poppins';
+    color: #151515;
+    padding: 8px 0 0 30px;
+}
+
+.block .read {
+    width: 163px;
+    height: 47px;
+    border: 2px solid #92C064;
+    border-radius: 12px;
+    margin: 95px 0 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.block .read h3 {
+    font: 700 15px 'Poppins';
+    color: #151515;
+    text-align: center;
+}
+
+.block .read .arrow {
+    background-image: url(./assets/Vector.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 8px;
+    height: 8px;
+    margin-left: 12px;
+}
+
+.products .wrapper-grid {
+    display: grid;
+    grid-template-columns: 270px 270px 270px;
+    grid-column-gap: 32px;
+    grid-row-gap: 137px;
+    justify-content: center;
+}
+
+.products .wrapper-grid .item {
+    background: #FFFFFF;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 332px;
+}
+
+.wrapper-grid .item .img {
+    background: #F9F9F9;
+    border-radius: 12px;
+    width: 237px;
+    height: 180px;
+}
+
+.wrapper-grid .item h3 {
+    font: 500 15px 'Poppins';
+    color: #151515;
+}
+
+.wrapper-grid .item p {
+    font: 400 12px 'Poppins';
+    color: #575757;
+}
+
+.item .price h2 {
+    font: 600 18px 'Poppins';
+    color: #151515;
+}
+
+.item .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item .price .button {
+    background: #6A983C;
+    border: 2px solid #46760A;
+    border-radius: 12px;
+    font: 700 15px 'Poppins';
+    color: #FFFFFF;
+    text-align: center;
+    width: 90px;
+    padding: 6px 0;
+}
+
+footer {
+    margin-top: 130px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-column-gap: 150px;
+    justify-content: center;
+}
+
+footer div h2 {
+    font: 600 18px 'Poppins';
+    color: #151515;
+
+}
+
+footer div p {
+    font: 400 14px 'Poppins';
+    color: #6A983C;
+    margin: 16px 0;
+}
